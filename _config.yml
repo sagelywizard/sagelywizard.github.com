@@ -1,0 +1,12 @@
+title: Ben Bastian's Blog
+description: >-
+  Ben Bastian's blog about software, AI, and other things.
+baseurl: "" # the subpath, e.g. /blog
+url: "https://bpbastian.com"
+twitter_username: sagelywizard
+github_username: sagelywizard
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed

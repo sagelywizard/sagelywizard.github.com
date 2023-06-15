@@ -10,3 +10,9 @@ github_username: sagelywizard
 theme: minima
 plugins:
   - jekyll-feed
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge

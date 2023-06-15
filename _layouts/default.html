@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--<link href="/css/syntax.css" rel="stylesheet" >-->
+    <title>{{ page.title }}</title>
+  </head>
+  <body class="dark:bg-slate-900 dark:text-slate-200">
+    <div class="h-3 bg-gradient-to-r from-indigo-900 from-10% via-red-900 via-50% to-emerald-800 to-90%"></div>
+    <div class="flex">
+        <div class="p-4 font-serif">
+            <nav class="flex flex-col">
+                <a class="text-slate-300 hover:text-slate-400" href="/me">about</a>
+                <a class="text-slate-300 hover:text-slate-400" href="/projects">projects</a>
+                <a class="text-slate-300 hover:text-slate-400" href="/links">links</a>
+            </nav>
+        </div>
+        <div>
+            <section>
+                {{ content }}
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>

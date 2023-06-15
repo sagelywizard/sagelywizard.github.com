@@ -1,3 +1,5 @@
 ---
-layout: home
+layout: default
+title: "Ben Bastian"
 ---
+

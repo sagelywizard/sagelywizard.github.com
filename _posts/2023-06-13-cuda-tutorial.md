@@ -5,7 +5,7 @@ permalink: /cuda-tutorial
 date:   2023-06-13 19:32:45 -0700
 category: "Software"
 usemathjax: true
-published: false
+published: true
 ---
 
 blah blah $$f(x)=mx+b$$ blah blah

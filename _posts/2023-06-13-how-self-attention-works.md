@@ -4,7 +4,7 @@ title:  "How Self-Attention Works"
 permalink: /how-self-attention-works
 date:   2023-06-13 19:32:45 -0700
 category: "AI"
-published: false
+published: true
 ---
 
 In this post, I explain the motivation behind scaled dot-product self-attention and how it works.

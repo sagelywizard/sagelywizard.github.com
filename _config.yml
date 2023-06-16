@@ -6,10 +6,11 @@ url: "http://www.bpbastian.com"
 twitter_username: sagelywizard
 github_username: sagelywizard
 
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-postcss
+postcss:
+  cache: false
 highlighter: rouge
 markdown: kramdown
 kramdown:

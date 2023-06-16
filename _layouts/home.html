@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="font-serif">
+{{ content }}
+</section>
+<section>
+    <ul>
+        {% assign categories = site.categories | sort %}
+        {% for category in categories %}
+            <div class="pb-8">
+                <h3 class="border-b-2 border-rose-900 font-serif text-xl">{{ category[0] }}</h3>
+                <ul>
+                    {% assign posts = category[1] | sort %}
+                    {% for post in posts %}
+                    <li><a href="{{ post.url }}" class="font-serif">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </ul>
+</section>

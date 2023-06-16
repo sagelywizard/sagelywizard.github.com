@@ -3,34 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <!--<link href="/css/syntax.css" rel="stylesheet" >-->
+    <link href="/css/main.css" rel="stylesheet" >
+    {% include head.html %}
     <title>{{ page.title }}</title>
   </head>
   <body class="dark:bg-slate-900 dark:text-slate-200">
     <div class="h-3 bg-gradient-to-r from-indigo-900 from-10% via-red-900 via-50% to-emerald-800 to-90%"></div>
-    <div class="flex">
-        <div class="p-4 font-serif">
-            <nav class="flex flex-col">
+    <div class="flex flex-col p-4">
+        <div class="font-serif">
+            <nav class="flex place-content-evenly">
+                <a class="text-slate-300 hover:text-slate-400" href="/">home</a>
                 <a class="text-slate-300 hover:text-slate-400" href="/me">about</a>
                 <a class="text-slate-300 hover:text-slate-400" href="/projects">projects</a>
-                <a class="text-slate-300 hover:text-slate-400" href="/links">links</a>
+                <a class="text-slate-300 hover:text-slate-400" href="/books">books</a>
+                <a class="text-slate-300 hover:text-slate-400" href="/contact">contact</a>
             </nav>
         </div>
-        <div>
-            <section>
-                {{ content }}
-                <ul>
-                    {% for post in site.posts %}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </section>
+        <div class="pt-8">
+            {{ content }}
         </div>
     </div>
-    <footer>
-    </footer>
   </body>
 </html>

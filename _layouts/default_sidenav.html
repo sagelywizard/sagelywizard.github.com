@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="/css/syntax.css" rel="stylesheet" >-->
+    <link href="/css/main.css" rel="stylesheet" >
+    {% include head.html %}
+    <title>{{ page.title }}</title>
+  </head>
+  <body class="dark:bg-slate-900 dark:text-slate-200">
+    <div class="h-3 bg-gradient-to-r from-indigo-900 from-10% via-red-900 via-50% to-emerald-800 to-90%"></div>
+    <div class="flex pt-12 pl-4 pr-4">
+        <div class="font-serif pr-8">
+            <nav class="flex flex-col">
+                <a class="text-slate-300 hover:text-slate-400" href="/">home</a>
+                <a class="text-slate-300 hover:text-slate-400" href="/me">about</a>
+                <a class="text-slate-300 hover:text-slate-400" href="/projects">projects</a>
+                <a class="text-slate-300 hover:text-slate-400" href="/books">books</a>
+                <a class="text-slate-300 hover:text-slate-400" href="/contact">contact</a>
+            </nav>
+        </div>
+        <div class="grow">
+            {{ content }}
+        </div>
+    </div>
+  </body>
+</html>

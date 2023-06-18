@@ -5,15 +5,15 @@ layout: default
 {{ content }}
 </section>
 <section>
-    <ul>
+    <ul class="md:grid grid-cols-2 gap-4">
         {% assign categories = site.categories | sort %}
         {% for category in categories %}
-            <div class="pb-8">
-                <h3 class="border-b-2 border-rose-900 font-serif text-xl">{{ category[0] }}</h3>
+            <div class="pb-8 font-serif">
+                <h3 class="border-b-2 border-rose-900 text-xl">{{ category[0] }}</h3>
                 <ul>
                     {% assign posts = category[1] | sort %}
                     {% for post in posts %}
-                    <li><a href="{{ post.url }}" class="font-serif">{{ post.title }}</a></li>
+                    <li><a href="{{ post.url }}" class="text-slate-200 hover:text-slate-400 underline decoration-dotted">{{ post.title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

@@ -6,4 +6,6 @@ permalink: /me/
 
 Hello! I’m Ben. I’m a software engineer.
 
+![its me](https://en.gravatar.com/userimage/13812855/88cdd7daa90c507f6a747f44802a1c8b.jpeg?size=256){: width='128'}{: height='128'}
+
 I write about projects related to software and artificial intelligence. On this website, I share what I learn.

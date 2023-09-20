@@ -6,18 +6,19 @@
     <!--<link href="/css/syntax.css" rel="stylesheet" >-->
     <link href="/assets/css/tailwind.css" rel="stylesheet" >
     <link href="/assets/css/main.css" rel="stylesheet" >
-    {% include head.html %}
+    {% include mathjax.html %}
+    {% include google_analytics.html %}
     <title>{{ page.title }}</title>
   </head>
-  <body class="dark:bg-slate-900 dark:text-slate-200">
+  <body class="bg-slate-000 text-slate-750">
     <div class="h-3 bg-gradient-to-r from-indigo-900 from-10% via-red-900 via-50% to-emerald-800 to-90%"></div>
     <div class="flex flex-col p-4">
         <div class="font-serif">
             <nav class="flex place-content-evenly">
-                <a class="text-slate-200 hover:text-slate-400" href="/">home</a>
-                <a class="text-slate-200 hover:text-slate-400" href="/me">about</a>
-                <a class="text-slate-200 hover:text-slate-400" href="/projects">projects</a>
-                <a class="text-slate-200 hover:text-slate-400" href="/contact">contact</a>
+                <a class="text-slate-700 hover:text-slate-600" href="/">home</a>
+                <a class="text-slate-700 hover:text-slate-600" href="/me">about</a>
+                <a class="text-slate-700 hover:text-slate-600" href="/projects">projects</a>
+                <a class="text-slate-700 hover:text-slate-600" href="/contact">contact</a>
             </nav>
         </div>
         <div class="pt-8">

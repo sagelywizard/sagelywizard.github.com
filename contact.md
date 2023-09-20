@@ -4,4 +4,4 @@ title: Contact
 permalink: /contact/
 ---
 
-Contact info...
+You can reach me at [benjamin.bastian@gmail.com](mailto:benjamin.bastian@gmail.com).
